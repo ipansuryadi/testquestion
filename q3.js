@@ -26,7 +26,7 @@ User.prototype = {
                     isGetPercentageBaseDiscount = true
                     break;
             }
-            if (!isGetPercentageBaseDiscount && this.membership > 2) {
+            if (!isGetPercentageBaseDiscount && this.membership > upToYear) {
                 percentageBaseDiscount = discount[0]
                 isGetPercentageBaseDiscount = true
             }
